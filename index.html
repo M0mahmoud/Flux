@@ -12,6 +12,7 @@
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous" />
     <link href="./images/favicon.png" rel="shortcut icon" type="image/x-icon" />
     <link href="./images/webclip.png" rel="apple-touch-icon" />
+    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen" />
   </head>
   <body class="body">
     <div class="navbar">
@@ -784,7 +785,7 @@
             <p class="margin-bottom-35">Fill out this form and we’ll get back to you.</p>
           </div>
           <div class="w-tabs">
-            <form id="contact-form" class="contact-form">
+            <form action="https://send.pageclip.co/dejK3KSFVGPJp7VDR6wicBk5kpGfboy2/Flux" class="pageclip-form contact-form" method="post" id="contact-form">
               <div class="form-group wsm">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required placeholder="Your Name" />
@@ -801,7 +802,7 @@
                 <label for="message">Message:</label>
                 <textarea rows="3" cols="15" id="message" name="message" required placeholder="Your Message"></textarea>
               </div>
-              <button type="submit" class="button w-button">Submit</button>
+              <button type="submit" class="pageclip-form__submit button w-button">Submit</button>
             </form>
           </div>
         </div>
@@ -880,5 +881,6 @@
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="main.js"></script>
+    <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
   </body>
 </html>
