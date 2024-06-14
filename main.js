@@ -50,4 +50,29 @@ document.addEventListener("DOMContentLoaded", function () {
     const offset = -currentIndex * 100;
     testimonials.style.transform = `translateX(${offset}%)`;
   }
+
+  // Contact Form
+  document.querySelector("#contact-form").addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    // Get form values
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const phone = document.getElementById("phone").value;
+    const message = document.getElementById("message").value;
+
+    // Perform form validation
+    if (!name || !email || !phone || !message) {
+      alert("Please fill in all fields.");
+      return;
+    }
+
+    const formData = {
+      name: name,
+      email: email,
+      phone: phone,
+      message: message,
+    };
+    console.log(formData);
+  });
 });

@@ -1239,6 +1239,50 @@ blockquote {
   transition: transform 0.2s;
   display: flex;
 }
+.contact-form {
+  place-content: center;
+  gap: 30px 18px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 8px;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 5px 35px rgba(30, 34, 40, 0.07);
+}
+.form-group.w100 {
+  grid-area: span 1 / span 2 / span 1 / span 2;
+}
+.form-group {
+  flex-direction: column;
+  align-items: flex-start;
+  display: flex;
+}
+.form-group label {
+  font-weight: 600;
+  line-height: 2;
+  color: var(--dark);
+}
+.form-group textarea {
+  max-height: 500px;
+  max-width: 740px;
+}
+.form-group input,
+.form-group textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #3898ec;
+  outline: 0;
+}
 
 @media screen and (max-width: 991px) {
   .display-1 {
@@ -1531,6 +1575,9 @@ blockquote {
   }
   .card {
     padding: 20px;
+  }
+  .form-group.wsm {
+    grid-area: span 1 / span 2 / span 1 / span 2;
   }
 }
 
