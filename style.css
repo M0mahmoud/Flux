@@ -1663,49 +1663,49 @@ blockquote {
 
 @font-face {
   font-family: "Unicons";
-  src: url("https://assets.website-files.com/64072c0202cbda2c81c484da/64072c0202cbda257bc4852b_unicons-line.woff2") format("woff2"), url("https://assets.website-files.com/64072c0202cbda2c81c484da/64072c0202cbda4e13c4852a_unicons-line.woff") format("woff");
+  src: url("./font/unicons-line.woff2") format("woff2"), url("./font/unicons-line2.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: block;
 }
 @font-face {
   font-family: "Space Grotesk";
-  src: url("https://assets.website-files.com/64072c0202cbda2c81c484da/640738302ae32f5192ed6345_SpaceGrotesk-SemiBold.woff2") format("woff2"), url("https://assets.website-files.com/64072c0202cbda2c81c484da/64073830fa99d233070edc0c_SpaceGrotesk-SemiBold.woff") format("woff");
+  src: url("./font/SpaceGrotesk-SemiBold.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
   font-display: block;
 }
 @font-face {
   font-family: "Space Grotesk";
-  src: url("https://assets.website-files.com/64072c0202cbda2c81c484da/64073830e44f31df1c11fdb5_SpaceGrotesk-Bold.woff2") format("woff2"), url("https://assets.website-files.com/64072c0202cbda2c81c484da/64073830838a1b0f59c7c753_SpaceGrotesk-Bold.woff") format("woff");
+  src: url("./font/SpaceGrotesk-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: block;
 }
 @font-face {
   font-family: "Space Grotesk";
-  src: url("https://assets.website-files.com/64072c0202cbda2c81c484da/640738305af5e992bed0f6cc_SpaceGrotesk-Light.woff2") format("woff2"), url("https://assets.website-files.com/64072c0202cbda2c81c484da/6407383079edd776d2176b0f_SpaceGrotesk-Light.woff") format("woff");
+  src: url("./font/SpaceGrotesk-Light.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
   font-display: block;
 }
 @font-face {
   font-family: "Space Grotesk";
-  src: url("https://assets.website-files.com/64072c0202cbda2c81c484da/6407383022d711316207ac5f_SpaceGrotesk-Medium.woff2") format("woff2"), url("https://assets.website-files.com/64072c0202cbda2c81c484da/64073830a852f61cae8237d3_SpaceGrotesk-Medium.woff") format("woff");
+  src: url("./font/SpaceGrotesk-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: block;
 }
 @font-face {
   font-family: "Space Grotesk";
-  src: url("https://assets.website-files.com/64072c0202cbda2c81c484da/64073830e3e1068209120cdb_SpaceGrotesk-Regular.woff2") format("woff2"), url("https://assets.website-files.com/64072c0202cbda2c81c484da/640738304540ee03120cf883_SpaceGrotesk-Regular.woff") format("woff");
+  src: url("./font/SpaceGrotesk-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: block;
 }
 @font-face {
   font-family: "MATERIAL ICONS";
-  src: url("https://assets.website-files.com/64072c0202cbda2c81c484da/6409d0c284239ca3632ad558_MaterialIconsRound-Regular.otf") format("opentype");
+  src: url("./font/iconRegular.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
   font-display: block;
