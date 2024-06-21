@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", async function () {
   const nextButton = document.querySelector(".slider-button.next");
 
   let currentIndex = 0;
-
+  const isArabic = window.location.pathname.includes("/indexAr.html");
   prevButton.addEventListener("click", () => {
     currentIndex = currentIndex > 0 ? currentIndex - 1 : testimonials.children.length - 1;
     updateSlider();
@@ -47,7 +47,10 @@ document.addEventListener("DOMContentLoaded", async function () {
   });
 
   function updateSlider() {
-    const offset = -currentIndex * 100;
+    let offset = -currentIndex * 100;
+    if (isArabic) {
+      offset *= -1; // Reverse direction for RTL in Arabic
+    }
     testimonials.style.transform = `translateX(${offset}%)`;
   }
 });
