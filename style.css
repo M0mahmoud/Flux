@@ -1663,13 +1663,6 @@ blockquote {
 }
 
 @font-face {
-  font-family: "Unicons";
-  src: url("./font/unicons-line.woff2") format("woff2"), url("./font/unicons-line2.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-  font-display: block;
-}
-@font-face {
   font-family: "Space Grotesk";
   src: url("./font/SpaceGrotesk-SemiBold.woff2") format("woff2");
   font-weight: 600;
@@ -1704,13 +1697,6 @@ blockquote {
   font-style: normal;
   font-display: block;
 }
-@font-face {
-  font-family: "MATERIAL ICONS";
-  src: url("./font/iconRegular.otf") format("opentype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: block;
-}
 /*Arabic Font */
 @font-face {
   font-family: "ArabicFont";
@@ -1737,7 +1723,23 @@ blockquote {
   src: local("ArabicFont"), url("./font/somar/SomarSans-Bold.woff2"), format("woff2");
   font-weight: 700;
 }
-
+svg {
+  display: block;
+  width: 11px;
+  height: 11px;
+  fill: #3f78e0;
+}
+svg.social {
+  width: 22px;
+  height: 22px;
+  fill: #fff;
+}
+svg.star_icon {
+  width: 18px;
+  height: 18px;
+  margin-inline: 2px;
+  fill: #fcc032;
+}
 html[dir="rtl"] body {
   font-family: "ArabicFont";
 }
