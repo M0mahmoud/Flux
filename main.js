@@ -37,12 +37,14 @@ document.addEventListener("DOMContentLoaded", async function () {
   let currentIndex = 0;
   const isArabic = window.location.pathname.includes("/indexAr.html");
   prevButton.addEventListener("click", () => {
-    currentIndex = currentIndex > 0 ? currentIndex - 1 : testimonials.children.length - 1;
+    currentIndex =
+      currentIndex > 0 ? currentIndex - 1 : testimonials.children.length - 1;
     updateSlider();
   });
 
   nextButton.addEventListener("click", () => {
-    currentIndex = currentIndex < testimonials.children.length - 1 ? currentIndex + 1 : 0;
+    currentIndex =
+      currentIndex < testimonials.children.length - 1 ? currentIndex + 1 : 0;
     updateSlider();
   });
 
@@ -53,4 +55,31 @@ document.addEventListener("DOMContentLoaded", async function () {
     }
     testimonials.style.transform = `translateX(${offset}%)`;
   }
+
+  // Function to handle form action
+  document
+    .getElementById("contact-form")
+    .addEventListener("submit", async function (event) {
+      event.preventDefault(); // Prevent the default form submission
+
+      const form = event.target;
+      const formData = new FormData(form);
+
+      try {
+        const response = await fetch(
+          "https://script.google.com/macros/s/AKfycbyfA48CCo70BuMD3DYGQ_apBGKFuxFzbPG4mQFSuPJOkAIProck3zM0SXqHXMFS_nvT/exec",
+          {
+            method: "POST",
+            body: new URLSearchParams(formData),
+          }
+        );
+
+        const data = await response.text();
+        document.getElementById("responseMessage").innerText = data;
+        form.reset();
+      } catch (error) {
+        console.error("Error:", error);
+        document.getElementById("responseMessage").innerText = error;
+      }
+    });
 });
